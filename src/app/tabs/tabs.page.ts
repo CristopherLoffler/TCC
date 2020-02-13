@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Geolocation} from '@ionic-native/geolocation/ngx'
+
 
 @Component({
   selector: 'app-tabs',
@@ -6,7 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['tabs.page.scss']
 })
 export class TabsPage {
+  public lat;
+  public lng;
+  constructor(private geolocation : Geolocation) {}
+  
+  locate(){
 
-  constructor() {}
-
+    }
 }
